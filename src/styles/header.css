@@ -1,0 +1,42 @@
+.header__top {
+  background-color: #000d6b;
+  color: white;
+  padding: 10px 0;
+}
+
+.header__top__left,
+.header__top__help,
+.header__top__right {
+  display: flex;
+  align-items: center;
+}
+
+.header__top__left {
+  column-gap: 1rem;
+}
+
+.header__top__help {
+  column-gap: 0.4rem;
+}
+
+.header__top__help i {
+  background-color: white;
+  color: #000d6b;
+  border-radius: 50%;
+  padding: 2px 4px;
+  font-size: 0.7rem;
+}
+
+.header__top__right {
+  justify-content: flex-end;
+  column-gap: 8px;
+}
+
+.header__top__right i {
+  color: white;
+}
+
+.header__top__right a,
+.header__top__help span {
+  font-size: 0.9rem;
+}
