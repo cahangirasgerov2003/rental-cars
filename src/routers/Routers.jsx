@@ -5,6 +5,7 @@ import Cars from "../pages/Cars";
 import CarDetails from "../pages/CarDetails";
 import Blogs from "../pages/Blogs";
 import BlogDetails from "../pages/BlogDetails";
+import Contact from "../pages/Contact";
 import NotFound from "../pages/NotFound";
 import { Navigate, Route, Routes } from 'react-router-dom';
 
@@ -18,6 +19,7 @@ const Routers = () => {
         <Route path='/cars/:id' element={<CarDetails />} />
         <Route path='/blogs' element={<Blogs />} />
         <Route path='/blog/:id' element={<BlogDetails />} />
+        <Route path='/contact' element={<Contact />} />
         <Route path='*' element={<NotFound />} />
      </Routes>
   )
