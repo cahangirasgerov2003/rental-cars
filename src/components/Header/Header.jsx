@@ -40,15 +40,17 @@ const Header = () => {
            </div>
            <div className="col-6">
             <div className="header__top__right">
-              <Link to="#" className='d-flex align-items-center gap-2'>
-                  <i className="ri-login-box-line"></i>Login
-              </Link>
-              <Link to="#" className='d-flex align-items-center gap-2'>
-                  <i className="ri-user-settings-line"></i>Register
-              </Link>
+              <NavLink to="/login" className='d-flex align-items-center gap-2'>
+                  <i className="ri-login-box-line"></i>
+                  <span>Login</span>
+              </NavLink>
+              <NavLink to="/register" className='d-flex align-items-center gap-2'>
+                  <i className="ri-user-settings-line"></i>
+                  <span>Register</span>
+              </NavLink>
             </div>
            </div>
-         </div>
+         </div> 
         </div>
        </div>
 
@@ -59,12 +61,12 @@ const Header = () => {
                 <div className="header__middle__logo">
                   <h1 className='d-inline-block'>
                     <Link to="/home" className='d-flex align-items-center gap-3'>
-                      <i class="ri-roadster-line"></i>
+                      <i className="ri-roadster-line"></i>
                       <span>
                         Rent Car <br /> Servise
                       </span>
                     </Link>
-                  </h1>
+                  </h1> 
                 </div>
             </div>
 
@@ -72,7 +74,7 @@ const Header = () => {
                 <div className="header__middle__location">
                   <div className='d-flex align-items-center gap-2'>
                     <span>
-                      <i class="ri-earth-line"></i>
+                      <i className="ri-earth-line"></i>
                     </span>
                     <div className="header__location__content">
                       <h4>Azerbaijan</h4>
@@ -85,7 +87,7 @@ const Header = () => {
             <div className="col-3">
                 <div className="header__middle__workday">
                   <div className='d-flex align-items-center gap-2'>
-                    <i class="ri-time-line"></i>
+                    <i className="ri-time-line"></i>
                     <div className="header__workday__content">
                       <h4>Sunday to Friday</h4>
                       <h6>9am - 6pm</h6>
@@ -122,7 +124,7 @@ const Header = () => {
                 <div className="header__navigation__right">
                    <div className="searchElement">
                     <input type="text" placeholder='Search ...'></input>
-                    <i class="ri-search-eye-line"></i>
+                    <i className="ri-search-eye-line"></i>
                    </div>
                 </div>
               </div>

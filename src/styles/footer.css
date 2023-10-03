@@ -1,0 +1,102 @@
+.footer {
+  background-color: rgb(25, 135, 84);
+  padding: 50px 0 40px 0;
+}
+
+.footer__logo h1 a {
+  color: white;
+  font-weight: 700;
+}
+
+.footer__logo h1 a span {
+  font-size: 1.5rem;
+}
+
+.footer__logo h1 a i {
+  font-size: 2.2rem;
+}
+
+.footer__logo__content p {
+  font-size: 1rem;
+  color: #ffffffb6;
+  text-align: justify;
+}
+
+.quick__links h3,
+.office__info__title h3,
+.newsletter h3 {
+  color: white;
+  font-size: 20px;
+}
+
+.links a h2,
+.info__details p,
+.info__details h2,
+.info__details i,
+.newsletter p {
+  color: #ffffffb6;
+  font-size: 1rem;
+}
+
+.sendNewsletter {
+  background-color: rgb(11, 61, 38);
+  border-radius: 50px;
+  padding: 8px 12px;
+}
+
+.sendNewsletter input,
+.sendNewsletter::placeholder {
+  color: #ffffffb6;
+  font-size: 1rem;
+}
+
+.sendNewsletter input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding-right: 10px;
+}
+
+.info__details p:not(:first-child) {
+  margin: 0 0 0 4px;
+}
+
+.street p {
+  margin-bottom: 10px;
+}
+
+.info__details h2 {
+  margin: 5px 0 5px 10px;
+}
+
+.links a h2 {
+  transition: color 0.3s;
+  display: inline-block;
+}
+
+.links a h2:hover {
+  color: rgb(93, 198, 247);
+}
+
+.links a.active h2 {
+  color: rgb(93, 198, 247);
+  border-bottom: 2px solid rgb(93, 198, 247);
+}
+
+.copy__right {
+  border-top: 1px solid white;
+  padding-top: 30px;
+}
+
+.copy__right h2 {
+  margin-bottom: 0;
+}
+
+.copy__right h2 i {
+  color: #ffffffb6;
+  font-size: 0.9rem;
+}
+
+.copy__right h2 p {
+  letter-spacing: 1px;
+}

@@ -7,6 +7,7 @@ import Blogs from "../pages/Blogs";
 import BlogDetails from "../pages/BlogDetails";
 import Contact from "../pages/Contact";
 import NotFound from "../pages/NotFound";
+import Policy from "../pages/Policy";
 import { Navigate, Route, Routes } from 'react-router-dom';
 
 const Routers = () => {
@@ -20,6 +21,7 @@ const Routers = () => {
         <Route path='/blogs' element={<Blogs />} />
         <Route path='/blog/:id' element={<BlogDetails />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/policy' element={<Policy />} />
         <Route path='*' element={<NotFound />} />
      </Routes>
   )

@@ -33,13 +33,23 @@
   column-gap: 30px;
 }
 
-.header__top__right i {
-  color: white;
-}
-
 .header__top__right a,
 .header__top__help span {
   font-size: 0.9rem;
+}
+
+.header__top__right a {
+  color: white;
+  transition: color 0.6s;
+}
+
+.header__top__right a:hover {
+  color: rgb(93, 198, 247);
+}
+
+.header__top__right a.active {
+  color: rgb(93, 198, 247);
+  border-bottom: 2px solid rgb(93, 198, 247);
 }
 
 /* Header middle styles */
@@ -128,6 +138,7 @@
   border: none;
   outline: none;
   color: white;
+  padding-right: 10px;
 }
 
 .searchElement input::placeholder {
@@ -137,6 +148,6 @@
 .searchElement i {
   color: rgb(245, 231, 205);
   cursor: pointer;
-  margin-left: 10px;
+  /* margin-left: 10px; */
   font-size: 20px;
 }
