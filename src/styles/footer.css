@@ -62,16 +62,25 @@
 }
 
 .street p {
-  margin-bottom: 10px;
+  margin-bottom: 0;
+}
+
+.info__details {
+  text-align: center;
 }
 
 .info__details h2 {
   margin: 5px 0 5px 10px;
 }
 
+.links div {
+  margin-bottom: 12px;
+}
+
 .links a h2 {
   transition: color 0.3s;
   display: inline-block;
+  margin-bottom: 0;
 }
 
 .links a h2:hover {
@@ -99,4 +108,8 @@
 
 .copy__right h2 p {
   letter-spacing: 1px;
+}
+
+.sendIcon {
+  cursor: pointer;
 }

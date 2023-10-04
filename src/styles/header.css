@@ -89,7 +89,7 @@
   font-weight: 600;
 }
 
-.request__btn a {
+.request__btn div {
   display: flex;
   align-items: center;
   column-gap: 0.4rem;

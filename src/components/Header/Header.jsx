@@ -1,6 +1,10 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import "../../styles/header.css";
+import { toast, ToastContainer } from 'react-toastify';
+
+import "react-toastify/dist/ReactToastify.css";
+
 
 const Header = () => {
 
@@ -24,6 +28,14 @@ const Header = () => {
       content: "Contact"
     }
   ]
+
+  const warningToast = () =>{
+      toast.warning("An unexpected error occurred !", {
+          autoClose: 2000,
+          pauseOnHover: false,
+          pauseOnFocusLoss: false,
+      });
+  }
 
   return (
     <header className="header">
@@ -50,7 +62,7 @@ const Header = () => {
               </NavLink>
             </div>
            </div>
-         </div> 
+         </div>  
         </div>
        </div>
 
@@ -98,10 +110,12 @@ const Header = () => {
 
             <div className="col-2 d-flex align-items-center">
                 <div className="header__middle__request d-flex align-items-center justify-content-end">
-                  <button className='btn request__btn'>
-                    <Link to="/request">
-                        <i className='ri-phone-line'></i>Request a call
-                    </Link>
+                  <button className='btn request__btn' onClick={()=>{
+                    warningToast();
+                  }}>
+                      <div>
+                          <i className='ri-phone-line'></i>Request a call
+                      </div>
                   </button>
                 </div>
             </div>
@@ -130,6 +144,8 @@ const Header = () => {
               </div>
           </div>
         </div>
+
+        <ToastContainer />
         
     </header>
   )
