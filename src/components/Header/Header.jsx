@@ -110,7 +110,7 @@ const Header = () => {
 
             <div className="col-2 d-flex align-items-center">
                 <div className="header__middle__request d-flex align-items-center justify-content-end">
-                  <button className='btn request__btn' onClick={()=>{
+                  <button className='button request__btn' onClick={()=>{
                     warningToast();
                   }}>
                       <div>

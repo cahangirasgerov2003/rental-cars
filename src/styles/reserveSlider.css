@@ -1,0 +1,57 @@
+@keyframes reserveButton {
+  from {
+    transform: scale(1, 1);
+  }
+  to {
+    transform: scale(1.1, 1.1);
+  }
+}
+
+.slider__item {
+  height: 620px;
+}
+.slider__item__01 {
+  background: linear-gradient(rgb(25, 135, 84, 0.3), rgb(25, 135, 84, 0.3)),
+    url(../assets/images/reserve__slider/benz.jpg);
+}
+.slider__item__02 {
+  background: linear-gradient(rgb(25, 135, 84, 0.3), rgb(25, 135, 84, 0.3)),
+    url(../assets/images/reserve__slider/bmwX6.jpg);
+}
+.slider__item__03 {
+  background: linear-gradient(rgb(25, 135, 84, 0.3), rgb(25, 135, 84, 0.3)),
+    url(../assets/images/reserve__slider/tesla.jpg);
+}
+.slider__item__01,
+.slider__item__02,
+.slider__item__03 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.slider__title {
+  font-size: 24px;
+  font-weight: 400;
+  color: white;
+}
+
+.slider__desc {
+  font-size: 50px;
+  font-weight: 600;
+  color: white;
+}
+
+.slider__container {
+  overflow: hidden;
+}
+
+.slider__content {
+  padding-top: 150px;
+}
+
+.reserve__btn {
+  color: rgb(25, 135, 84) !important;
+  background-color: white !important;
+  animation: reserveButton 2s linear 0s infinite alternate;
+}
