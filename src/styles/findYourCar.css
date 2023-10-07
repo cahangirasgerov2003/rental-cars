@@ -1,0 +1,49 @@
+.find__car__content {
+  position: absolute;
+  bottom: -200px;
+  z-index: 999;
+}
+
+.find__car__row {
+  background-color: white;
+  padding-left: 12px;
+  box-shadow: 0.5px 0.5px 20px rgb(5, 63, 36), -0.5px -0.5px 20px rgb(5, 63, 36);
+}
+
+.row > .find__car__left {
+  background: linear-gradient(rgba(249, 168, 38, 0.8), rgba(249, 168, 38, 0.8)),
+    url(../assets/images/reserve__slider/bentley.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.find__car__form p,
+.pen__ball {
+  font: 600 1.6rem Algerian;
+  line-height: 1.4;
+  color: rgb(11, 61, 38);
+}
+
+.find__car__form {
+  padding: 55px 0 50px 0;
+}
+
+.find__car__form div {
+  margin-bottom: 16px;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: rgb(11, 61, 38) !important;
+  box-shadow: 0 0 0 0.25rem rgb(11 61 38 / 25%) !important;
+}
+
+#journey__time::before {
+  content: "Time :";
+  margin-right: 0.8rem;
+}
+
+.form-control:invalid {
+  background-position-y: 8.8px !important;
+}

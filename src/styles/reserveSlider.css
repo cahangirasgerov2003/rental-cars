@@ -55,3 +55,8 @@
   background-color: white !important;
   animation: reserveButton 2s linear 0s infinite alternate;
 }
+
+.reserve__slider__section {
+  position: relative;
+  margin-bottom: 350px;
+}
