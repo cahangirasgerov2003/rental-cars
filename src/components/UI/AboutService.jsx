@@ -4,9 +4,9 @@ import "../../styles/aboutService.css";
 const AboutService = () => {
   return (
     <div>
-      <h3 className="about__section__title">About Us</h3>
+      <h3 className="about__section__title section__title">About Us</h3>
       <h4 className="about__section__desc">Welcome to car rent service</h4>
-      <p className="about__desc__content">
+      <p className="about__desc__content section__desc__content">
         That wonderful feeling – you start the engine and your adventure begins…
         At this website everything we do is about giving you the freedom to
         discover more. We’ll move mountains to find you the right rental car,

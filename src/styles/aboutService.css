@@ -2,21 +2,15 @@
   margin-bottom: 100px;
 }
 
-.about__section__title,
 .how__work__container div h4 {
   color: #f9a826;
   font-size: 1.2rem;
 }
 
-.about__desc__content,
 .how__work__tricks p {
   color: #7c8a97;
   font-size: 0.9rem;
   text-align: justify;
-}
-
-.about__desc__content {
-  line-height: 30px;
 }
 
 .how__work__container {

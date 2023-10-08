@@ -1,0 +1,19 @@
+.service__element {
+  padding-right: 20px;
+}
+.service__element__icon i {
+  color: #f9a826;
+  font-size: 2.4rem;
+}
+.service__element__content h5 {
+  display: inline-block;
+  transition: color 0.3s;
+  cursor: context-menu;
+  color: rgb(11, 70, 42);
+}
+.service__element__content h5:hover {
+  color: #f9a826;
+}
+.service__element__content p {
+  line-height: 25px;
+}

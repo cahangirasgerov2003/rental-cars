@@ -58,3 +58,15 @@ ul {
   color: white;
   background-color: rgba(25, 135, 84, 0.9);
 }
+
+.section__title {
+  color: #f9a826;
+  font-size: 1.2rem;
+}
+
+.section__desc__content {
+  color: #7c8a97;
+  font-size: 0.9rem;
+  text-align: justify;
+  line-height: 30px;
+}
