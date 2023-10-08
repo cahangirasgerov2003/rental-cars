@@ -1,0 +1,10 @@
+.car__image {
+  height: 200px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.car__container {
+  padding: 20px;
+  border: 1px solid #7c8a97;
+}

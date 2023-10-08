@@ -5,6 +5,7 @@ import FindYourCar from "../components/UI/FindYourCar";
 import AboutService from "../components/UI/AboutService";
 import bentley from "../assets/images/about__us/green__bentley.png";
 import PapularServices from "../components/UI/PapularServices";
+import HotOffers from "../components/UI/HotOffers";
 const Home = () => {
   return (
     <React.Fragment>
@@ -58,6 +59,8 @@ const Home = () => {
                   Hot Offers
                 </h4>
               </div>
+
+              <HotOffers />
             </div>
           </div>
         </section>
