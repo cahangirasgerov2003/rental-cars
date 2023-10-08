@@ -2,7 +2,8 @@ import React from "react";
 import Helmet from "../components/Helmet/Helmet";
 import ReserveSlider from "../components/UI/ReserveSlider";
 import FindYourCar from "../components/UI/FindYourCar";
-
+import AboutService from "../components/UI/AboutService";
+import bentley from "../assets/images/about__us/green__bentley.png";
 const Home = () => {
   return (
     <React.Fragment>
@@ -16,6 +17,21 @@ const Home = () => {
                 <div className="col-4 find__car__left"></div>
                 <div className="col-8 find__car__right">
                   <FindYourCar />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="about__service__section">
+          <div className="container">
+            <div className="row">
+              <div className="col-6">
+                <AboutService />
+              </div>
+              <div className="col-6 about__image">
+                <div className="d-flex align-items-center h-100">
+                  <img className="w-100" alt="car" src={bentley} />
                 </div>
               </div>
             </div>
