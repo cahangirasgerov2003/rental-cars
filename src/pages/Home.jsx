@@ -6,6 +6,7 @@ import AboutService from "../components/UI/AboutService";
 import bentley from "../assets/images/about__us/green__bentley.png";
 import PapularServices from "../components/UI/PapularServices";
 import HotOffers from "../components/UI/HotOffers";
+import EarnWithUs from "../components/UI/EarnWithUs";
 const Home = () => {
   return (
     <React.Fragment>
@@ -63,6 +64,10 @@ const Home = () => {
               <HotOffers />
             </div>
           </div>
+        </section>
+
+        <section className="earn__us">
+          <EarnWithUs />
         </section>
       </Helmet>
     </React.Fragment>
