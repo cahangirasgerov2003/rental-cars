@@ -1,10 +1,100 @@
+@keyframes card__animation {
+  from {
+    transform: scale(1, 1);
+  }
+  to {
+    transform: scale(0.99, 0.99);
+  }
+}
+
+.hot__offers {
+  margin-bottom: 50px;
+}
+
+.car__container {
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 6px rgba(0, 128, 0, 0.4),
+    -4px -4px 6px rgba(0, 128, 0, 0.4);
+}
+
 .car__image {
   height: 200px;
   width: 100%;
   object-fit: contain;
 }
 
+.car__features {
+  margin-bottom: 24px;
+}
+
+.car__features div {
+  align-items: center;
+  column-gap: 4px;
+}
+
+.car__features div i {
+  color: #ec7225;
+  font-size: 1.1rem;
+}
+
+.car__features div h5 {
+  margin-bottom: 0;
+  color: rgb(49, 48, 48);
+  font-size: 1.1rem;
+}
+
+.car__name {
+  font-size: 1.8rem;
+  color: rgb(11, 61, 38);
+}
+
+.car__price {
+  text-align: center;
+  color: rgb(25, 135, 84);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.rent__button,
+.details__button {
+  width: 50%;
+  border: none;
+  padding: 5px 0;
+  transition: all 0.2s;
+}
+
+.rent__button {
+  background-color: rgb(25, 135, 84);
+  border-radius: 3px 0 0 3px;
+}
+
+.details__button {
+  background-color: #ec7225;
+  border-radius: 0 3px 3px 0;
+}
+
+.rent__button a,
+.details__button a {
+  color: white;
+  font-weight: 600;
+}
+
+.rent__button:hover {
+  color: white;
+  background-color: rgb(11, 61, 38);
+}
+
+.details__button:hover {
+  color: white;
+  background-color: #833c0f;
+}
+
 .car__container {
-  padding: 20px;
-  border: 1px solid #7c8a97;
+  animation: card__animation 2s linear 0s infinite alternate;
+  cursor: pointer;
+}
+
+.car__container:hover {
+  animation: none;
 }

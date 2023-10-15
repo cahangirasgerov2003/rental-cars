@@ -1,22 +1,26 @@
-import React from "react";
 import "../../styles/hotOffers.css";
 import carData from "../../assets/data/carData";
-import { Link } from "react-router-dom";
-
+import { Link, useNavigate } from "react-router-dom";
 const HotOffers = () => {
+  const navigate = useNavigate();
+
+  const goToCar = () => {
+    navigate("/cars");
+  };
+
   return (
     <>
       {carData.map((carItem, index) => {
         return (
-          <div className="col-4">
-            <div className="car__container">
+          <div className="col-4 mb-5" key={index}>
+            <div className="car__container" onClick={goToCar}>
               <img
                 src={carItem.img__url}
                 className="car__image"
                 alt={carItem.car__name}
               />
               <div className="car__content">
-                <h2 className="car__name">{carItem.car__name}</h2>
+                <h2 className="car__name text-center">{carItem.car__name}</h2>
                 <p className="car__price">
                   ${carItem.price} / <span>Day</span>
                 </p>
@@ -30,8 +34,8 @@ const HotOffers = () => {
                   <i className="ri-settings-2-line"></i>
                   <h5>{carItem.automatic}</h5>
                 </div>
-                <div className="d-flex">
-                  <i className="ri-timer-flash-line"></i>{" "}
+                <div className="d-flex" style={{ paddingRight: 2 + "px" }}>
+                  <i className="ri-timer-flash-line"></i>
                   <h5>{carItem.speed}</h5>
                 </div>
               </div>
