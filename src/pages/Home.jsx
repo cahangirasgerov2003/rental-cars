@@ -7,6 +7,7 @@ import bentley from "../assets/images/about__us/green__bentley.png";
 import PapularServices from "../components/UI/PapularServices";
 import HotOffers from "../components/UI/HotOffers";
 import EarnWithUs from "../components/UI/EarnWithUs";
+import UserFeedback from "../components/UI/UserFeedback";
 const Home = () => {
   return (
     <React.Fragment>
@@ -68,6 +69,22 @@ const Home = () => {
 
         <section className="earn__us">
           <EarnWithUs />
+        </section>
+
+        <section className="feedback__section">
+          <div className="container">
+            <div className="row">
+              <div className="col-12 mb-5">
+                <h6 className="feedback__title section__title text-center">
+                  Our client says
+                </h6>
+                <h4 className="feedback__desc text-center">Testimonials</h4>
+              </div>
+              <div className="col-12">
+                <UserFeedback />
+              </div>
+            </div>
+          </div>
         </section>
       </Helmet>
     </React.Fragment>
