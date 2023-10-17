@@ -8,6 +8,7 @@ import PapularServices from "../components/UI/PapularServices";
 import HotOffers from "../components/UI/HotOffers";
 import EarnWithUs from "../components/UI/EarnWithUs";
 import UserFeedback from "../components/UI/UserFeedback";
+import LatestBlogs from "../components/UI/LatestBlogs";
 const Home = () => {
   return (
     <React.Fragment>
@@ -83,6 +84,22 @@ const Home = () => {
               <div className="col-12">
                 <UserFeedback />
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="latest__blogs__section">
+          <div className="container">
+            <div className="row">
+              <div className="col-12 mb-5">
+                <h6 className="latest__blogs__title section__title text-center">
+                  Explore our blogs
+                </h6>
+                <h4 className="latest__blogs__desc text-center">
+                  Latest Blogs
+                </h4>
+              </div>
+              <LatestBlogs />
             </div>
           </div>
         </section>
