@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "../../styles/header.css";
 import { toast, ToastContainer } from "react-toastify";
@@ -6,6 +6,7 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Header = () => {
+  const menuRef = useRef(null);
   const headerNavLinks = [
     {
       path: "/home",
@@ -37,6 +38,9 @@ const Header = () => {
     });
   };
 
+  function toggleMenu() {
+    menuRef.current.classList.toggle("menu__visible");
+  }
   return (
     <header className="header">
       <div className="header__top">
@@ -135,14 +139,26 @@ const Header = () => {
       <div className="header__navbar">
         <div className="container">
           <div className="header__navigation d-flex align-items-center justify-content-between">
-            <div className="header__navigation__left">
-              {headerNavLinks.map((link, index) => {
-                return (
-                  <NavLink to={link.path} key={index}>
-                    {link.content}
-                  </NavLink>
-                );
-              })}
+            <div className="mobile__menu" onClick={toggleMenu}>
+              <i className="ri-menu-line"></i>
+            </div>
+            <div
+              className="header__navigation__left"
+              onClick={toggleMenu}
+              ref={menuRef}
+            >
+              <div className="toggle__menu">
+                <div className="closeMenu">
+                  <i className="ri-close-circle-line"></i>
+                </div>
+                {headerNavLinks.map((link, index) => {
+                  return (
+                    <NavLink to={link.path} key={index}>
+                      {link.content}
+                    </NavLink>
+                  );
+                })}
+              </div>
             </div>
             <div className="header__navigation__right">
               <div className="searchElement">
