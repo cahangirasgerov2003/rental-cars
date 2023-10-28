@@ -47,3 +47,23 @@
 .form-control:invalid {
   background-position-y: 8.8px !important;
 }
+
+@media only screen and (max-width: 991px) {
+  .row > .find__car__left {
+    display: none;
+  }
+
+  .find__car__content {
+    bottom: -180px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .find__car__content {
+    bottom: -200px;
+  }
+
+  .find__car__form {
+    padding: 35px 0 30px 0;
+  }
+}

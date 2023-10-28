@@ -34,3 +34,14 @@
 .how__work__tricks p {
   margin-bottom: 0;
 }
+
+@media only screen and (max-width: 991px) {
+  .about__section__title,
+  .about__section__desc {
+    text-align: center;
+  }
+
+  .about__image {
+    margin: 0 auto;
+  }
+}

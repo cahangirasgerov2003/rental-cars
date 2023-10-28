@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const BlogItem = ({ blogItem }) => {
   const authorName = blogItem.author.indexOf(" ");
   return (
-    <div className="col-4">
+    <div className="col-lg-4 col-md-6 col-12 mb-4">
       <div className="blog__image">
         <img src={blogItem.imgBlog} alt="drive" />
       </div>

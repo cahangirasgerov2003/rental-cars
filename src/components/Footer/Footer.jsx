@@ -36,11 +36,11 @@ const Footer = () => {
     },
   ];
 
-  function successToast () {
-    toast.success("Updates will be shared with you : )",{
-          autoClose: 2000,
-          pauseOnHover: false,
-          pauseOnFocusLoss: false,
+  function successToast() {
+    toast.success("Updates will be shared with you : )", {
+      autoClose: 2000,
+      pauseOnHover: false,
+      pauseOnFocusLoss: false,
     });
   }
 
@@ -49,7 +49,7 @@ const Footer = () => {
       <div className="footer">
         <div className="container">
           <div className="row">
-            <div className="col-4 d-flex align-items-center">
+            <div className="col-lg-4 col-md-5 d-flex align-items-center">
               <div className="footer__logo">
                 <h1 className="d-inline-block">
                   <Link to="/home" className="d-flex align-items-center gap-3">
@@ -69,7 +69,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="col-2">
+            <div className="col-md-2 col-6">
               <div className="links__container">
                 <div className="quick__links">
                   <h3 className="text-center">Quick Links</h3>
@@ -88,7 +88,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="col-3">
+            <div className="col-lg-3 col-md-5 col-6">
               <div className="office__info__container">
                 <div className="office__info__title">
                   <h3 className="text-center">Head Office</h3>
@@ -122,7 +122,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="col-3">
+            <div className="col-lg-3 col-12">
               <div className="newsletter">
                 <h3 className="text-center">Newsletter</h3>
                 <p className="text-center">Subscribe our newsletter</p>
@@ -133,7 +133,10 @@ const Footer = () => {
                     placeholder="Email..."
                     className="w-100"
                   />
-                  <i className="ri-send-plane-2-line text-white sendIcon" onClick={successToast}></i>
+                  <i
+                    className="ri-send-plane-2-line text-white sendIcon"
+                    onClick={successToast}
+                  ></i>
                 </div>
               </div>
             </div>

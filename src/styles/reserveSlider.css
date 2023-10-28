@@ -16,18 +16,18 @@
 }
 .slider__item__02 {
   background: linear-gradient(rgb(25, 135, 84, 0.3), rgb(25, 135, 84, 0.3)),
-    url(../assets/images/reserve__slider/bmwX6.jpg);
+    url(../assets/images/reserve__slider/tesla__model.avif);
 }
 .slider__item__03 {
   background: linear-gradient(rgb(25, 135, 84, 0.3), rgb(25, 135, 84, 0.3)),
-    url(../assets/images/reserve__slider/tesla.jpg);
+    url(../assets/images/reserve__slider/bmwi7.jpeg);
 }
 .slider__item__01,
 .slider__item__02,
 .slider__item__03 {
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center center;
 }
 
 .slider__title {
@@ -59,4 +59,46 @@
 .reserve__slider__section {
   position: relative;
   margin-bottom: 350px;
+}
+
+@media only screen and (max-width: 991px) {
+  .slider__item {
+    height: 550px;
+  }
+
+  .slider__content {
+    padding-top: 110px;
+  }
+
+  .slider__desc {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .slider__item {
+    height: 500px;
+  }
+
+  .slider__desc {
+    font-size: 35px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .slider__container {
+    margin-bottom: 100px;
+  }
+
+  .reserve__slider__section {
+    margin-bottom: 100px;
+  }
+
+  .slider__desc {
+    font-size: 27px;
+  }
+
+  .slider__content {
+    padding: 110px 0 0 30px;
+  }
 }

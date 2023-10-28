@@ -12,7 +12,7 @@ const HotOffers = () => {
     <>
       {carData.map((carItem, index) => {
         return (
-          <div className="col-4 mb-5" key={index}>
+          <div className="col-lg-4 col-md-6 col-12 mb-5" key={index}>
             <div
               className="car__container"
               onClick={() => {

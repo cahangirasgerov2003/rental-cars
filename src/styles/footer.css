@@ -113,3 +113,20 @@
 .sendIcon {
   cursor: pointer;
 }
+
+@media only screen and (max-width: 991px) {
+  .newsletter {
+    margin-top: 20px;
+  }
+  .quick__links h3,
+  .office__info__title h3,
+  .newsletter h3 {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .footer__logo {
+    margin-bottom: 20px;
+  }
+}

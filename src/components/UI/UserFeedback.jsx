@@ -17,6 +17,26 @@ const UserFeedback = () => {
     autoplaySpeed: 1000,
     slidesToShow: 3,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+    ],
   };
 
   return (
@@ -31,7 +51,7 @@ const UserFeedback = () => {
             Detailed review
           </Link>
         </p>
-        <div className="d-flex align-items-center gap-4">
+        <div className="d-flex align-items-center gap-4 feedback__user__photo">
           <div className="feedback__photo">
             <img src={man1} alt="Man" />
           </div>
@@ -51,7 +71,7 @@ const UserFeedback = () => {
             Detailed review
           </Link>
         </p>
-        <div className="d-flex align-items-center gap-4">
+        <div className="d-flex align-items-center gap-4 feedback__user__photo">
           <div className="feedback__photo">
             <img src={woman2} alt="Man" />
           </div>
@@ -72,7 +92,7 @@ const UserFeedback = () => {
             Detailed review
           </Link>
         </p>
-        <div className="d-flex align-items-center gap-4">
+        <div className="d-flex align-items-center gap-4 feedback__user__photo">
           <div className="feedback__photo">
             <img src={man2} alt="Man" />
           </div>
@@ -95,7 +115,7 @@ const UserFeedback = () => {
             Detailed review
           </Link>
         </p>
-        <div className="d-flex align-items-center gap-4">
+        <div className="d-flex align-items-center gap-4 feedback__user__photo">
           <div className="feedback__photo">
             <img src={woman1} alt="Man" />
           </div>

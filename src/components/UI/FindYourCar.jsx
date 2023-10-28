@@ -16,7 +16,7 @@ const FindYourCar = () => {
             <i className="ri-ball-pen-fill pen__ball"></i>
           </span>
         </div>
-        <div className="col-4">
+        <div className="col-md-4 col-sm-6 col-12">
           <input
             className="form-control"
             type="text"
@@ -27,7 +27,7 @@ const FindYourCar = () => {
           <div className="invalid-feedback">Please select a valid state.</div>
         </div>
 
-        <div className="col-4">
+        <div className="col-md-4 col-sm-6 col-12">
           <input
             className="form-control"
             type="text"
@@ -37,7 +37,7 @@ const FindYourCar = () => {
           />
           <div className="invalid-feedback">Please select a valid state.</div>
         </div>
-        <div className="col-4">
+        <div className="col-md-4 col-sm-6 col-12">
           <input
             className="form-control"
             type="date"
@@ -46,7 +46,7 @@ const FindYourCar = () => {
           />
           <div className="invalid-feedback">Please select a valid state.</div>
         </div>
-        <div className="col-4">
+        <div className="col-md-4 col-sm-6 col-12">
           <input
             className="form-control"
             type="time"
@@ -57,7 +57,7 @@ const FindYourCar = () => {
           <div className="invalid-feedback">Please select a valid state.</div>
         </div>
 
-        <div className="col-4 selectFindCar">
+        <div className="col-md-4 col-sm-6 col-12 selectFindCar">
           <select
             className="form-select"
             name="AC__type"
@@ -72,7 +72,7 @@ const FindYourCar = () => {
           </select>
         </div>
 
-        <div className="col-4">
+        <div className="col-md-4 col-sm-6 col-12">
           <button
             type="button"
             className="button w-100"

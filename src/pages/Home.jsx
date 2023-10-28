@@ -20,7 +20,7 @@ const Home = () => {
             <div className="container">
               <div className="row find__car__row">
                 <div className="col-4 find__car__left"></div>
-                <div className="col-8 find__car__right">
+                <div className="col-lg-8 col-12 find__car__right">
                   <FindYourCar />
                 </div>
               </div>
@@ -31,10 +31,10 @@ const Home = () => {
         <section className="about__service__section">
           <div className="container">
             <div className="row">
-              <div className="col-6">
+              <div className="col-lg-6 col-12">
                 <AboutService />
               </div>
-              <div className="col-6 about__image">
+              <div className="col-lg-6 col-12 about__image">
                 <div className="d-flex align-items-center h-100">
                   <img className="w-100" alt="car" src={bentley} />
                 </div>

@@ -3,7 +3,7 @@ import "../../styles/serviceItem.css";
 
 const ServiceItem = ({ service }) => {
   return (
-    <div className="col-4">
+    <div className="col-lg-4 col-md-6 col-12">
       <div className="service__element">
         <div className="mb-3 service__element__icon">
           <i className={service.icon}></i>

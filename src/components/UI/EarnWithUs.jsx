@@ -7,7 +7,7 @@ const EarnWithUs = () => {
     <div className="earn__us__content">
       <div className="container">
         <div className="row">
-          <div className="col-6 mt-3">
+          <div className="col-md-6 col-12 mt-3">
             <p className="earn__us__title">
               Do You Want to Earn With Us? So Don't Be Late
             </p>
@@ -15,7 +15,7 @@ const EarnWithUs = () => {
               Become a Driver
             </button>
           </div>
-          <div className="col-6 earn__us__img">
+          <div className="col-md-6 col-12 earn__us__img">
             <img src={benz__yellow} alt="car" />
           </div>
         </div>
