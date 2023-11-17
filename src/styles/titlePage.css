@@ -1,0 +1,11 @@
+.about__section {
+  background-image: linear-gradient(
+      rgb(25, 135, 84, 0.4),
+      rgb(25, 135, 84, 0.4)
+    ),
+    url(../assets/images/about__us/car__drive.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0;
+}

@@ -76,7 +76,7 @@ const UserFeedback = () => {
             <img src={woman2} alt="Man" />
           </div>
           <div className="feedback__user">
-            <h2>Alsu ...</h2>
+            <h2>Fəridə ...</h2>
             <h4>Customer 2</h4>
           </div>
         </div>
