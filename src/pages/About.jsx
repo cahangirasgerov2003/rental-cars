@@ -6,6 +6,7 @@ import bentley from "../assets/images/about__us/green__bentley.png";
 import carDrive from "../assets/images/about__us/car__drive.jpg";
 import SafeRide from "../components/UI/SafeRide";
 import EarnWithUs from "../components/UI/EarnWithUs";
+import Experts from "../components/UI/Experts";
 
 const About = () => {
   return (
@@ -53,7 +54,13 @@ const About = () => {
 
         <section className="our__experts">
           <div className="container">
-            <div className="row"></div>
+            <div className="row">
+              <div className="col-12">
+                <h6 className="section__title text-center">Experts </h6>
+                <h4 className="text-center">Our Members</h4>
+              </div>
+              <Experts />
+            </div>
           </div>
         </section>
       </Helmet>

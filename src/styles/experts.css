@@ -1,3 +1,50 @@
 .our__experts {
-  margin-bottom: 50px;
+  margin-bottom: 90px;
+}
+
+.about__expert {
+  border: 1px solid #7c8a972d;
+  border-radius: 5px;
+}
+
+.sosial__networks {
+  position: relative;
+  cursor: pointer;
+}
+
+.sosial__networks img {
+  border-radius: 5px;
+}
+
+.networks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.7rem;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -100%;
+  left: 0;
+  background-color: rgb(25, 135, 84);
+  opacity: 0;
+  transition: top 0.5s ease 0s;
+}
+
+.networks a i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  color: red;
+  background-color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 50%;
+}
+
+.sosial__networks:hover .networks {
+  top: 0;
+  opacity: 0.7;
 }

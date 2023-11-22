@@ -36,8 +36,21 @@ const Footer = () => {
     },
   ];
 
-  function successToast() {
+  const controlEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
+  function successEmailToast() {
     toast.success("Updates will be shared with you : )", {
+      autoClose: 2000,
+      pauseOnHover: false,
+      pauseOnFocusLoss: false,
+    });
+  }
+
+  function errorEmailToast() {
+    toast.error("Verify the authenticity of the email !", {
       autoClose: 2000,
       pauseOnHover: false,
       pauseOnFocusLoss: false,
@@ -135,7 +148,15 @@ const Footer = () => {
                   />
                   <i
                     className="ri-send-plane-2-line text-white sendIcon"
-                    onClick={successToast}
+                    onClick={() => {
+                      if (
+                        controlEmail(document.querySelector("#sendNewsletter"))
+                      ) {
+                        successEmailToast();
+                      } else {
+                        errorEmailToast();
+                      }
+                    }}
                   ></i>
                 </div>
               </div>
