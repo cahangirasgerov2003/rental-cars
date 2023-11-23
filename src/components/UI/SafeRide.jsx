@@ -5,7 +5,9 @@ const SafeRide = () => {
   return (
     <div>
       <div>
-        <h4>We Are Committed To Provide Safe Ride Solutions</h4>
+        <h4 className="safe__ride__title">
+          We Are Committed To Provide Safe Ride Solutions
+        </h4>
         <h5 className="section__desc__content">
           With a commitment to the safety of our users, we distinguish ourselves
           with engaging and secure ride solutions. Adhering to the highest

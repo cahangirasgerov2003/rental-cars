@@ -26,3 +26,9 @@
     text-align: center;
   }
 }
+
+@media only screen and (max-width: 575px) {
+  .safe__ride__title {
+    text-align: center;
+  }
+}
